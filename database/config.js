@@ -9,10 +9,11 @@ const pool = new pg.Pool({
 });
 
 pool.query("SELECT NOW()", (err, res) => {
-if(err) {
-    console.log('Error en conectar a base de datos😒😒, err')
-} else {
-  console.log('Base de datos conectada😊')}
-})
+    if (err) {
+        console.log("Error en conectar a base de datos😒😒", err);
+    } else {
+        console.log("Base de datos conectada😊", res.rows[0].now);
+    }
+});
 
 export default pool;
