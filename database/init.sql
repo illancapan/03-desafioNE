@@ -1,4 +1,4 @@
--- CREATE DATABASE likeme;
+ --CREATE DATABASE likeme;
 
 CREATE TABLE posts (
     id              SERIAL, 
